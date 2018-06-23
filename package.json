@@ -1,0 +1,28 @@
+{
+  "name": "riot-framework",
+  "version": "1.0.0",
+  "description": "Typescript-based framework for riotjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types" : "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DominicLee/riot-framework.git"
+  },
+  "author": "Dominic Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DominicLee/riot-framework/issues"
+  },
+  "homepage": "https://github.com/DominicLee/riot-framework#readme",
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "riot": "^3.10.3",
+    "riot-control": "^1.0.0",
+    "riot-route": "^3.1.3"
+  }
+}
