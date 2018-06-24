@@ -1,3 +1,5 @@
+import {FirebaseController} from './FirebaseController';
+
 export default class RiotFramework {
 
     constructor() {
@@ -7,8 +9,16 @@ export default class RiotFramework {
         console.log("Initialised");
     }
 
+    static initialiseDatabase(_config:IFirebaseConfig):void {
+        FirebaseController.initialise(_config);
+    }
+
     static createController(_view: any): Controller {
         return new Controller(_view)
+    }
+
+    static postToDatabase(_config:IUserScore):void {
+        FirebaseController.postToDatabase(_config);
     }
 }
 

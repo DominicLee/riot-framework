@@ -1,13 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const FirebaseController_1 = require("./FirebaseController");
 class RiotFramework {
     constructor() {
     }
     static initialise() {
         console.log("Initialised");
     }
+    static initialiseDatabase(_config) {
+        FirebaseController_1.FirebaseController.initialise(_config);
+    }
     static createController(_view) {
         return new Controller(_view);
+    }
+    static postToDatabase(_config) {
+        FirebaseController_1.FirebaseController.postToDatabase(_config);
     }
 }
 exports.default = RiotFramework;

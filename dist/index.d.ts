@@ -1,7 +1,9 @@
 export default class RiotFramework {
     constructor();
     static initialise(): void;
+    static initialiseDatabase(_config: IFirebaseConfig): void;
     static createController(_view: any): Controller;
+    static postToDatabase(_config: IUserScore): void;
 }
 export declare class Controller {
     private linkedView;
