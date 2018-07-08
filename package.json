@@ -2,12 +2,12 @@
   "name": "riot-framework",
   "version": "1.0.0",
   "description": "Typescript-based framework for riotjs",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf('../dist/*')"
+    "test": "ts-node node_modules/jasmine/bin/jasmine",
+    "clean": "rimraf('./dist/*')"
   },
-  "types": "dist/index.d.ts",
+  "types": "@types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DominicLee/riot-framework.git"
@@ -19,6 +19,15 @@
   },
   "homepage": "https://github.com/DominicLee/riot-framework#readme",
   "devDependencies": {
+    "@types/jasmine": "^2.8.8",
+    "jasmine": "^3.1.0",
+    "jasmine-core": "^3.1.0",
+    "jasmine-ts": "^0.2.1",
+    "karma": "^2.0.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-typescript": "^3.0.12",
+    "ts-node": "^7.0.0",
     "typescript": "^2.9.2"
   },
   "dependencies": {

@@ -5,10 +5,21 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "declaration": true,
-    "outDir": "./dist"
+    "lib": [
+      "es6",
+      "es2017",
+      "dom",
+      "scripthost"
+    ],
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "typeRoots" : [
+      "./@types/", "./node_modules/@types/"]
   },
+  "include": ["./src/**/*"],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "spec"
   ]
 }
